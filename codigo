@@ -1,0 +1,17 @@
+import requests
+import time
+
+page=requests.get('https://www.globo.com')
+
+def verificador(page):
+    newpage=requests.get('https://www.globo.com')
+    if page.text=!newpage.text:
+        requests.get('https://api.telegram.org/bot904454372:AAGJ4bUCpHouIsO6A0e_HZ9mkAk2FUc5uWE/sendMessage?chat_id=-1001496340726&text=atualizou')
+
+    else:
+        newpage=requests.get('https://www.globo.com')
+        continue
+
+while True:
+    verificador(page)
+    time.sleep(30)
